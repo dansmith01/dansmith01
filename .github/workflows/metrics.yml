@@ -17,6 +17,7 @@ jobs:
           # Your GitHub token
           # The following scopes are required:
           #  - public_access (default scope)
+          #  - repo
           # The following additional scopes may be required:
           #  - read:org      (for organization related metrics)
           #  - read:user     (for user related data)
@@ -28,6 +29,7 @@ jobs:
           user: dansmith01
           template: classic
           base: header, activity, community, repositories, metadata
+          base_indepth: yes
           config_timezone: America/Los_Angeles
           plugin_activity: yes
           plugin_activity_days: 14
@@ -55,3 +57,4 @@ jobs:
           plugin_repositories: yes
           plugin_repositories_featured: cmmr/rbiom, cmmr/interprocess, cmmr/jobqueue, cmmr/webqueue, cmmr/fillpattern
           plugin_repositories_order: featured, pinned, starred, random
+          plugin_traffic: yes
