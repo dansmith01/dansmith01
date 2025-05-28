@@ -13,55 +13,32 @@ jobs:
     permissions:
       contents: write
     steps:
-      
-      - name: Base
-        uses: lowlighter/metrics@latest
+      - uses: lowlighter/metrics@latest
         with:
-          filename: github-metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          config_timezone: America/Los_Angeles
-          base: header, activity, community, metadata
-          base_indepth: yes
-          repositories: 200
-          user: dansmith01
-          
-      - name: Languages
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.plugin.languages.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
           user: dansmith01
           commits_authoring: Daniel Smith, dansmith01, dansmith01@users.noreply.github.com, dansmith01@gmail.com, dpsmith@bcm.edu
+          template: classic
+          base: header, activity, community, metadata
+          base_indepth: yes
+          config_timezone: America/Los_Angeles
           plugin_languages: yes
+          plugin_languages_analysis_timeout: 60
           plugin_languages_categories: programming
           plugin_languages_recent_categories: programming
-          plugin_languages_sections: most-used, recently-used
           plugin_languages_indepth: yes
-          plugin_languages_other: no
           plugin_languages_indepth_custom: cmmr/rbiom, cmmr/interprocess, cmmr/jobqueue, cmmr/webqueue, cmmr/fillpattern
-          plugin_languages_ignored: html, css, scss, JavaScript
-          plugin_languages_analysis_timeout: 60
+          plugin_languages_limit: 4
+          plugin_languages_sections: most-used, recently-used
           plugin_languages_details: bytes-size, percentage
-          
-      - name: Contributions
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.plugin.notable.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
+          plugin_lines: yes
+          plugin_lines_history_limit: 1
+          plugin_lines_repositories_limit: 4
+          plugin_lines_sections: base
           plugin_notable: yes
           plugin_notable_from: all
-          plugin_notable_indepth: no
           plugin_notable_repositories: yes
           plugin_notable_types: commit, pull_request
-          
-      - name: Reactions
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.plugin.reactions.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
           plugin_reactions: yes
           plugin_reactions_display: absolute
           plugin_reactions_limit: 200
