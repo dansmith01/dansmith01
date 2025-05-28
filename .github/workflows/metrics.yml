@@ -1,7 +1,11 @@
+# Visit https://github.com/lowlighter/metrics#-documentation for full reference
 name: Metrics
 on:
+  # Schedule updates (each hour)
   schedule: [{cron: "0 0 * * *"}]
+  # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
+  push: {branches: ["main"]}
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
@@ -48,3 +52,6 @@ jobs:
           plugin_lines_history_limit: 1
           plugin_lines_repositories_limit: 4
           plugin_lines_sections: base
+          plugin_repositories: yes
+          plugin_repositories_featured: cmmr/rbiom, cmmr/interprocess, cmmr/jobqueue, cmmr/webqueue, cmmr/fillpattern
+          plugin_repositories_order: featured, pinned, starred, random
