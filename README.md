@@ -1,1 +1,3 @@
-[![metrics](github-metrics.svg)](https://metrics.lecoq.io/insights/dansmith01)
+<picture>
+  <img src="/github-metrics.svg" alt="Metrics">
+</picture>
