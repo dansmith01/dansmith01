@@ -148,16 +148,16 @@
             </section>
             <section class="column">
                 <h3 class="field">Most used languages</h3>
-                <small>estimation from 474mb of code in 41140 edited files across 2228 commits</small>
+                <small>estimation from 278mb of code in 32433 edited files across 1873 commits</small>
                 <svg class="bar" xmlns="http://www.w3.org/2000/svg" width="460" height="8">
                     <mask id="languages-bar">
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="249.53606701922936" height="8" fill="#555555"/>
-                    <rect mask="url(#languages-bar)" x="249.53606701922936" y="0" width="182.81033397025487" height="8" fill="#ededed"/>
-                    <rect mask="url(#languages-bar)" x="432.34640098948427" y="0" width="14.389060293615856" height="8" fill="#ededed"/>
-                    <rect mask="url(#languages-bar)" x="446.7354612831001" y="0" width="13.264538716899905" height="8" fill="#ededed"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="243.28799234775917" height="8" fill="#555555"/>
+                    <rect mask="url(#languages-bar)" x="243.28799234775917" y="0" width="177.51137871483914" height="8" fill="#ededed"/>
+                    <rect mask="url(#languages-bar)" x="420.79937106259825" y="0" width="25.228651119417396" height="8" fill="#198CE7"/>
+                    <rect mask="url(#languages-bar)" x="446.0280221820157" y="0" width="13.971977817984275" height="8" fill="#ededed"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -169,20 +169,20 @@
                                 C
                             </div>
                             <small>
-                                <div>162 MB</div>
-                                <div>54.25%</div>
+                                <div>81.7 MB</div>
+                                <div>52.89%</div>
                             </small>
                         </div>
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#ededed" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#198CE7" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
-                                Fortran
+                                R
                             </div>
                             <small>
-                                <div>9.39 MB</div>
-                                <div>3.13%</div>
+                                <div>8.48 MB</div>
+                                <div>5.48%</div>
                             </small>
                         </div>
                     </section>
@@ -195,8 +195,8 @@
                                 PLSQL
                             </div>
                             <small>
-                                <div>119 MB</div>
-                                <div>39.74%</div>
+                                <div>59.6 MB</div>
+                                <div>38.59%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -204,11 +204,11 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                     <path fill="#ededed" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
-                                Makefile
+                                Fortran
                             </div>
                             <small>
-                                <div>8.66 MB</div>
-                                <div>2.88%</div>
+                                <div>4.69 MB</div>
+                                <div>3.04%</div>
                             </small>
                         </div>
                     </section>
@@ -352,7 +352,7 @@
             </section>
             <footer>
                 <span>These metrics do not include all private contributions</span>
-                <span>Last updated 22 Dec 2025, 10:15:19 (timezone America/Los_Angeles) with lowlighter/metrics@3.34.0</span>
+                <span>Last updated 22 Dec 2025, 13:39:20 (timezone America/Los_Angeles) with lowlighter/metrics@3.34.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
